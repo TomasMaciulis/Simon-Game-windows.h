@@ -1,0 +1,49 @@
+#include "simon.h"
+IDI_ICON1 ICON "resource\\default.ico"
+YELLOW_BUTTON_BITMAP BITMAP "resource\\button_assets\\yellow_button.bmp"
+BLUE_BUTTON_BITMAP BITMAP "resource\\button_assets\\blue_button.bmp"
+RED_BUTTON_BITMAP BITMAP "resource\\button_assets\\red_button.bmp"
+GREEN_BUTTON_BITMAP BITMAP "resource\\button_assets\\green_button.bmp"
+YELLOW_BUTTON_HOVER_BITMAP BITMAP "resource\\button_assets\\yellow_button_hover.bmp"
+BLUE_BUTTON_HOVER_BITMAP BITMAP "resource\\button_assets\\blue_button_hover.bmp"
+RED_BUTTON_HOVER_BITMAP BITMAP "resource\\button_assets\\red_button_hover.bmp"
+GREEN_BUTTON_HOVER_BITMAP BITMAP "resource\\button_assets\\green_button_hover.bmp"
+YELLOW_BUTTON_CLICK_BITMAP BITMAP "resource\\button_assets\\yellow_button_click.bmp"
+BLUE_BUTTON_CLICK_BITMAP BITMAP "resource\\button_assets\\blue_button_click.bmp"
+RED_BUTTON_CLICK_BITMAP BITMAP "resource\\button_assets\\red_button_click.bmp"
+GREEN_BUTTON_CLICK_BITMAP BITMAP "resource\\button_assets\\green_button_click.bmp"
+START_BUTTON_BITMAP BITMAP "resource\\button_assets\\start_button.bmp"
+EXIT_BUTTON_BITMAP BITMAP "resource\\button_assets\\exit_button.bmp"
+SCORES_BUTTON_BITMAP BITMAP "resource\\button_assets\\scores_button.bmp"
+BACK_BUTTON_BITMAP BITMAP "resource\\button_assets\\back_button.bmp"
+RESTART_BUTTON_BITMAP BITMAP "resource\\button_assets\\restart_button.bmp"
+ABOUT_BUTTON_BITMAP BITMAP "resource\\button_assets\\about_button.bmp"
+SCORE_SCREEN_BITMAP_0 BITMAP "resource\\score_assets\\0.bmp"
+SCORE_SCREEN_BITMAP_1 BITMAP "resource\\score_assets\\1.bmp"
+SCORE_SCREEN_BITMAP_2 BITMAP "resource\\score_assets\\2.bmp"
+SCORE_SCREEN_BITMAP_3 BITMAP "resource\\score_assets\\3.bmp"
+SCORE_SCREEN_BITMAP_4 BITMAP "resource\\score_assets\\4.bmp"
+SCORE_SCREEN_BITMAP_5 BITMAP "resource\\score_assets\\5.bmp"
+SCORE_SCREEN_BITMAP_6 BITMAP "resource\\score_assets\\6.bmp"
+SCORE_SCREEN_BITMAP_7 BITMAP "resource\\score_assets\\7.bmp"
+SCORE_SCREEN_BITMAP_8 BITMAP "resource\\score_assets\\8.bmp"
+SCORE_SCREEN_BITMAP_9 BITMAP "resource\\score_assets\\9.bmp"
+
+
+IDR_MENU MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit", MENU_EXIT
+    END
+END
+
+EXIT_DIALOG DIALOG 100, 50, 122, 60
+STYLE WS_CAPTION | WS_POPUP | WS_SYSMENU | DS_MODALFRAME
+
+CAPTION "u sure mate"
+{
+    LTEXT "Are you sure you want to exit?", 5, 10, 10, 100, 100
+    DEFPUSHBUTTON "&Yes", EXIT_YES, 15, 25, 40, 25, WS_TABSTOP
+    DEFPUSHBUTTON "&No", EXIT_NO, 65, 25, 40, 25, WS_TABSTOP
+}

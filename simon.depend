@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1574195312 source:x:\uni laif\third year\first semester\windows api\simon\main.cpp
+	<string>
+	"simon.h"
+	"shortcut_functions.h"
+	"game_functions.h"
+
+1574195311 x:\uni laif\third year\first semester\windows api\simon\simon.h
+	<windows.h>
+	<tchar.h>
+	<time.h>
+	<stdlib.h>
+
+1574195051 source:x:\uni laif\third year\first semester\windows api\simon\simon.rc
+	"simon.h"
+
+1569493468 x:\uni laif\third year\first semester\windows api\simon\menu.h
+
+1574194081 x:\uni laif\third year\first semester\windows api\simon\shortcut_functions.h
+
+1570977523 x:\uni laif\third year\first semester\windows api\simon\main.cpp
+	"simon.h"
+	"shortcut_functions.h"
+
+1573641111 x:\uni laif\third year\first semester\windows api\simon\game_functions.h
+	<sstream>
+	<string>
+
